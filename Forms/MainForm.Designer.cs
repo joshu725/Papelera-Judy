@@ -36,6 +36,7 @@ namespace PapeleraJudy
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             panelMenuLateral = new Panel();
             buttonIVA = new Button();
             panelEmpleadosSubmenu = new Panel();
@@ -654,6 +655,7 @@ namespace PapeleraJudy
             ClientSize = new Size(1475, 786);
             Controls.Add(panelContenedor);
             Controls.Add(panelMenuLateral);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             MinimumSize = new Size(1491, 825);
             Name = "MainForm";
